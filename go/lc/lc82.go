@@ -1,10 +1,5 @@
 package main
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func deleteDuplicates(head *ListNode) *ListNode {
 	pre := &ListNode{Next: head}
 	dummy := pre

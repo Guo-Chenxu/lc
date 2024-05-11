@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func findBottomLeftValue(root *TreeNode) int {
 	cur := make([]*TreeNode, 0)
 	cur = append(cur, root)
