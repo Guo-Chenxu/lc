@@ -6,6 +6,9 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
+        System.out.println(~(-1));
+        System.out.println(~(1));
+        System.out.println(~(0));
         // System.out.println(check(true));
         // System.out.println(check(false));
         // System.out.printf("%.4f", 1.0);
