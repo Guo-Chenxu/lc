@@ -1,10 +1,6 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+
 
 func convertBST(root *TreeNode) *TreeNode {
 	// 此部分代码由 codegeek 自动生成

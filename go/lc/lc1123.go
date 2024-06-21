@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func lcaDeepestLeaves(root *TreeNode) *TreeNode {
 	maxDepth, ans := 0, &TreeNode{}
 	var dfs func(cur *TreeNode, depth int) int
@@ -16,7 +10,7 @@ func lcaDeepestLeaves(root *TreeNode) *TreeNode {
 			}
 			return depth + 1
 		}
-		
+
 		l := dfs(cur.Left, depth+1)
 		r := dfs(cur.Right, depth+1)
 		if l == r && r == maxDepth {

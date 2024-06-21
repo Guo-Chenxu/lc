@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func levelOrder(root *TreeNode) [][]int {
 	res, cur := make([][]int, 0), make([]*TreeNode, 0)
 	if root == nil {

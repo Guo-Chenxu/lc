@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func findMode(root *TreeNode) []int {
 	vals := make(map[int]int, 0)
 	res, maxCount := make([]int, 0), -1

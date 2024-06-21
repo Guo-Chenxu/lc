@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func getMinimumDifference(root *TreeNode) int {
 	vals := make([]int, 0)
 	var inorder func(node *TreeNode)

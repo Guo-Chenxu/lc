@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func sortedArrayToBST(nums []int) *TreeNode {
 	var dfs func(nums []int, l, r int) *TreeNode
 	dfs = func(nums []int, l, r int) *TreeNode {

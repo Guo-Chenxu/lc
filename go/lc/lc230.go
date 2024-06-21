@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func kthSmallest(root *TreeNode, k int) int {
 	ans, cnt := -1, 0
 	var dfs func(cur *TreeNode)

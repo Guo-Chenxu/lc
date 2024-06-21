@@ -2,12 +2,6 @@ package main
 
 import "math"
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func isValidBST(root *TreeNode) bool {
 	var check func(node *TreeNode, min, max int) bool
 	check = func(node *TreeNode, min, max int) bool {

@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func insertIntoBST(root *TreeNode, val int) *TreeNode {
 	node := root
 	if root == nil {
@@ -19,7 +13,7 @@ func insertIntoBST(root *TreeNode, val int) *TreeNode {
 			}
 			node = node.Left
 		} else {
-			if node.Right == nil{
+			if node.Right == nil {
 				break
 			}
 			node = node.Right

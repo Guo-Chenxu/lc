@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func buildTree(inorder []int, postorder []int) *TreeNode {
 	idxMap := make(map[int]int, 0)
 	for i, v := range inorder {

@@ -1,11 +1,5 @@
 package main
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func hasPathSum(root *TreeNode, targetSum int) bool {
 	sum := make(map[int]int, 0)
 

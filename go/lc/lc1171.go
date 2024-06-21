@@ -1,10 +1,5 @@
 package main
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func removeZeroSumSublists(head *ListNode) *ListNode {
 	res := &ListNode{}
 	res.Next = head
