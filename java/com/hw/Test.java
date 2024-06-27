@@ -9,7 +9,7 @@ public class Test {
         // System.out.println(check(true));
         // System.out.println(check(false));
         // System.out.printf("%.4f", 1.0);
-        new Test().testMapPQ();
+        // new Test().testMapPQ();
     }
 
     public static String check(Boolean flag) {
